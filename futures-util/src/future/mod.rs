@@ -71,6 +71,9 @@ pub use self::poll_fn::{poll_fn, PollFn};
 mod ready;
 pub use self::ready::{err, ok, ready, Ready};
 
+mod immediate;
+pub use self::immediate::{immediate, immediate_unpin, Immediate, ImmediateUnpin};
+
 mod join;
 pub use self::join::{join, Join};
 
